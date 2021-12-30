@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Only Admin</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Praise&display=swap');
+
+
+		* {
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body {
+			background-color: #f8f8ff;
+		}
+		.container {
+			height: 400px;
+			width: 350px;
+			background-color: #fff;
+			margin: 0 auto;
+			margin-top: 50px;
+			padding-top: 30px;
+			border: 1px solid lightgrey;
+			text-align: center;
+		}
+		h1 {
+			font-size: 50px;
+			text-decoration: none;
+			font-weight: normal;
+			font-family: 'Praise', cursive;
+		}
+		.atau {
+			height: 15px;
+			position: absolute;
+			margin-top: 30px;
+		}
+		.kiri {
+			background-color: rgba(var(--b38,219,219,219),1);
+			height: 1px;
+			width: 100px;
+    		position: relative;
+    		top: 0.45em;
+    		margin: 0 15px;
+    		left: 30px;
+		}
+		.teks {
+			position: relative;
+			line-height: 15px;
+			left: 110px;
+			font-family: arial;
+			font-size: 13px;
+			color: grey;
+		}
+		.kanan {
+			background-color: rgba(var(--b38,219,219,219),1);
+			height: 1px;
+			width: 100px;
+    		position: relative;
+    		top: 0.45em;
+    		margin: 0 15px;
+    		top: -7px;
+    		right: 0;
+    		left: 190px;
+		}
+		.bot {
+			margin-top: 200px;
+		}
+		.nama, .password {
+			height: 35px;
+			width: 250px;
+			margin-top: 10px;
+			border: 1px solid lightgrey;
+			border-radius: 5px;
+			padding: 0 6px;
+			background-color: #f8f8ff;
+			font-size: 12px;
+		}
+		.submit {
+			height: 30px;
+			width: 250px;
+			margin-top: 20px;
+			border: none;
+			border-radius: 5px;
+			background-color: lightskyblue;
+			opacity: 0.8;
+			color: #fff;
+			font-weight: bold;
+			cursor: pointer;
+		}
+		.submit:hover {
+			background-color: dodgerblue;
+		}
+		.facebook {
+			margin-top: 90px;
+			cursor: pointer;
+			font-family: sans-serif;
+		}
+		.facebook span {
+			margin-left: 6px;
+			color: darkblue;
+		}
+		.facebook p {
+			font-size: 13px;
+		}
+		.bot {
+			height: 70px;
+			width: 350px;
+			background-color: #fff;
+			margin: 0 auto;
+			margin-top: 10px;
+			border: 1px solid lightgrey;
+			text-align: center;
+			font-family: sans-serif;
+			font-size: 15px;
+		}
+		.bot p {
+			line-height: 70px;
+		}
+		.bot a {
+			text-decoration: none;
+			color: dodgerblue;
+			font-weight: bold;
+		}
+    </style>
+</head>
+<body>
+	<div class="container">
+			<h1>Admin</h1>
+			<input type="text" placeholder="Nomer telpon, nama pengguna atau email" class="nama">
+			<input type="password" placeholder="Kata Sandi" class="password">
+			<div>
+				<input type="submit" value="Login" class="submit">
+			</div>
+			<div class="atau">
+				<div class="kiri"></div>
+				<div class="teks">ATAU</div>
+				<div class="kanan"></div>			
+			</div>
+			<div class="facebook">
+				<img src="fb.png" alt="facebook" height="16"><span>Masuk dengan facebook</span>
+				<br><br>
+				<p>Lupa kata sandi?</p>
+			</div>
+	</div>
+	<div class="bot">
+		<p>Tidak punya akun? <a href="">Buat akun</a></p>
+	</div>
+
+
+
+<script>
+	let username = document.querySelector('.nama');
+	let password = document.querySelector('.password');
+	let kirim = document.querySelector('.submit');
+
+	kirim.addEventListener('click', () => {
+		if(username.value == '' && password.value == '') {
+			return alert('form tidak boleh kosong!');
+		}
+		if(username.value == 'Majid' && password.value == '1311094a') {
+			alert('login succesfull');
+		} else {
+			alert('username atau password salah');
+		}
+	})
+
+</script>
+
+</body>
+</html>

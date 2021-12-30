@@ -1,0 +1,260 @@
+/*------------------------PROFILE--------------------------*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body {
+	background-color: #0a2b3c;
+}
+#particles-js {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 30px 0;
+}
+.navbar select {
+	height: 40px;
+	width: 120px;
+	padding: 7px;
+	font-size: 1em;
+	background-color: dodgerblue;
+	color: #ffffff;
+	border: 10px;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+.navbar select option {
+	height: 30px;
+	width: 80px;
+	background-color: #2b4052;
+}
+.navbar .age {
+	height: 40px;
+	width: 100px;
+	padding: 7px;
+	font-size: 1em;
+	background-color: #416381;
+	color: #ffffff;
+	border: 10px;
+	border-radius: 20px;
+	letter-spacing: 1px;
+	font-weight: 1000;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.navbar .age img {
+	height: 28px;
+}
+.container {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.container .box {
+	position: relative;
+	width: 320px;
+	height: 400px;
+	border-radius: 20px;
+	margin-top: 80px;
+	background: linear-gradient(45deg, #2da2ff 25%, #444 25%, #444 50%, #2da2ff 50%, #2da2ff 75%, #444 75%, #444 100%);
+	background-size: 40px 40px;
+	filter: grayscale(1);
+	animation: animateBg 0.5s linear infinite;
+	animation-play-state: paused;
+	display: flex;
+	justify-content: center;
+	box-shadow: -1px -1px 2px rgba(255,255,255,0.25), inset 2px 2px 5px rgba(255,255,255,0.25), 8px 30px 30px rgba(0,0,0,0.4), inset -2px -2px 5px rgba(0,0,0,0.3);
+}
+.container .box img {
+	position: absolute;
+	height: 115%;
+	bottom: 0;
+	transition: height 0.5s;
+}
+.container .box:hover img {
+	height: 580px;
+}
+.container .box:hover {
+	animation-play-state: running;
+	filter: grayscale(0);
+}
+@keyframes animateBg {
+	0% {
+		background-position: 0;
+	}
+	100% {
+		background-position: 40px;
+	}
+}
+
+.container h2 {
+	font-size: 2em;
+	color: #ffffff;
+	font-family: sans-serif;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+/*container 2*/
+.container2 {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-bottom: 50px;
+}
+.container2 .h2 {
+	margin-bottom: 30px;
+	font-weight: 700;
+	font-size: 30px;
+	color: #1f9cff;
+}
+.name {
+	display: flex;
+	align-items: center;
+	width: 700px;
+	justify-content: space-between;
+	padding: 10px;
+	box-shadow: -1px -1px 2px rgba(255,255,255,0.25), inset 2px 2px 5px rgba(255,255,255,0.25), 8px 30px 30px rgba(0,0,0,0.4), inset -2px -2px 5px rgba(0,0,0,0.3);
+}
+.bungkus {
+	display: flex;
+	flex-direction: row;
+}
+.container2 .name h2 {
+	color: #ffffff;
+	margin-right: 50px;
+	letter-spacing: 2px;
+	font-size: 25px;
+}
+.kotak {
+	height: 30px;
+	width: 30px;
+	border: 2px solid #fff;
+	background-color: dodgerblue;
+	margin: 10px 7px;
+	border-radius: 50%;
+}
+.pasif {
+	background-color: #fff;
+}
+
+/*container3*/
+.container3 {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+.container3 h2 {
+	font-size: 2em;
+	margin-bottom: 50px;
+	color: #1f9cff;
+	display: flex;
+	position: relative;
+	margin-top: 50px;
+}
+.container3 .row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 82.8%;
+}
+.container3 .circle {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	background-color: #2b4052;
+	width: 330px;
+	padding: 15px;
+	margin: 10px 10px;
+	border-radius: 10px;
+}
+.container3 .circle img {
+	width: 300px;
+}
+.container3 .circle p {
+	color: lightblue;
+	font-size: 1em;
+	font-weight: 500;
+	margin-top: 10px;
+}
+.container3 .circle a button {
+	text-decoration: none;
+	font-size: 1em;
+	color: #ffffff;
+	letter-spacing: 1px;
+}
+.container3 .circle button {
+	width: 80px;
+	height: 30px;
+	border: 3px solid dodgerblue;
+	border-radius: 20px;
+	margin-top: 10px;
+	background-color: transparent;
+	cursor: pointer;
+}
+.container3 .circle button:hover {
+	background-color: lightblue;
+}
+
+
+
+
+/*versi mobile*/
+@media(max-width: 650px) {
+	body {
+		overflow-x: hidden; 
+	}
+	.container {
+		position: relative;
+	}
+	.container .box {
+		width: 260px;
+	}
+	.container2 {
+		padding: 20px;
+	}
+	.container2 .h2 {
+		font-size: 25px;
+	}
+	.container2 .name {
+		width: 340px;
+		display: block;
+	}
+	.container2 .name h2 {
+		font-size: 20px;
+	}
+	.container2 .name .bungkus {
+		width: 90%;
+	}
+	.container2 .name .bungkus .kotak {
+	    height: 20px;
+	    width: 20px;
+	    border: 2px solid #fff;
+	    background-color: dodgerblue;
+	    margin: 5px 3px;
+	    border-radius: 50%;
+	}
+	.container2 .name .bungkus .pasif {
+		background-color: #fff;
+	}
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body {
+			font: 16px/28px arial, sans-serif;
+			background-color: #eaeaea;
+			color: black;
+		}
+
+		.container {
+			width: 950px;
+			margin: auto;
+			background-color: white;
+			position: relative;
+		}
+		.header {
+			padding: 10px;
+			margin-bottom: 10px;
+		}
+		.header .judul {
+			font-size: 30px;
+			font-weight: bold;
+			font-family: times new roman;
+		}
+		.header a {
+			text-decoration: none;
+			color: royalblue;
+			font-family: arial;
+			font-weight: bold;
+		}
+		.header a:hover {
+			background-color: lightskyblue;
+			color: white;
+		}
+		.gambar {
+			height: 330px;
+			background-image: url(img/hack.jpg);
+			background-size: cover;
+			background-position: 0 -70px;
+			border-top: 5px solid lightskyblue;
+			border-bottom: 5px solid violet;
+			opacity: 0.9;
+		}
+		.main {
+			width: 600px;
+			padding: 10px;
+			box-sizing: border-box;
+			float: left;
+		}
+		.main h2 {
+			font-size: 25px;
+			font-family: times new roman;
+			font-weight: bold;
+		}
+		.main .penulis {
+			font-size: 13px;
+		}
+		.main .penulis a {
+			text-decoration: none;
+			color: royalblue;
+			font-family: arial;
+			font-weight: bold;
+		}
+		.main .penulis a:hover {
+			background-color: lightskyblue;
+			color: white;
+		}
+		.main p {
+			margin-bottom: 20px;
+			font-size: 14px;
+		}
+
+		.sidebar {
+			width: 300px;
+			float: right;
+			padding: 10px;
+		}
+		.sidebar h3 {
+			font-size: 20px;
+			font-family: times new roman;
+			font-weight: bold;
+		}
+		.sidebar img {
+			height: 70px;
+			width: 70px;
+			float: left;
+			padding-right: 10px;	
+		}
+		.sidebar p {
+			font: 12px/18px arial;
+			
+		}
+		.footer {
+			background-color: black;
+		}
+		.footer p {
+			color: white;
+			font-size: 13px;
+			font-family: arial;
+			font-weight: bold;
+			text-align: center;
+		}
+		p {
+			text-align: justify;
+		}
+		.topbar {
+			top: 10px;
+			right: 10px;
+			position: absolute;
+		}
+		.topbar img {
+			height: 35px;
+			width: 35px;
+			border-radius: 50%;
+		}
+
+
+		.cf:before,
+		.cf:after {
+			content: " ";
+			display: table;
+		}
+
+		.cf:after {
+			clear: both;
+		}
+
+		.cf {
+			*zoom: 1;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="container">
+		<div class="header">
+			<h1 class="judul">My Website</h1>
+			<nav>
+				<a href="#">Home</a> |
+				<a href="#">About</a> |
+				<a href="#">Product</a> |
+				<a href="#">Service</a> |
+				<a href="#">Contact</a>
+			</nav>
+			<div class="topbar">
+				<a href="https://wa.me/6287866979902" target="_blank"><img src="img/wa.jpg" /></a>
+				<a href="https://www.instagram.com/adji.20.01/" target="_blank"><img src="img/ig.jpg" /></a>
+				<a href="https://www.facebook.com/eden.adji.5" target="_blank"><img src="img/fb.jpg" /></a>
+			</div>
+		</div>
+		<div class="gambar"></div>
+		<div class="content cf">
+			<div class="main">
+				<h2>Judul Artikel</h2>
+				
+				<p class="penulis">Dibuat oleh <a href="#">Abd Majid</a> pada 31 Juli 2021
+				</p>
+				
+				<p>Lorem Ipsum dolor sit amet, consectetur adipsicing elit.
+				officiis impedit omnis ex similiquea prasentiue, consecuator
+				cumke vero dolores delenity, moires provident blanditiis,
+				beatea natuss consequntuur quia hic adipcitc possius odit</p>
+				
+				<p>Lorem Ipsum dolor sit amet, consectetur adipsicing elit.
+				officiis impedit omnis ex similiquea prasentiue, consecuator
+				cumke vero dolores delenity, moires provident blanditiis,
+				beatea natuss consequntuur quia hic adipcitc possius odit
+				Lorem Ipsum dolor sit amet, consectetur adipsicing elit.
+				officiis impedit omnis ex similiquea prasentiue, consecuator
+				cumke vero dolores delenity, moires provident blanditiis,
+				beatea natuss consequntuur quia hic adipcitc possius odit</p>
+				
+				<p>Lorem Ipsum dolor sit amet, consectetur adipsicing elit.
+				officiis impedit omnis ex similiquea prasentiue, consecuator
+				cumke vero dolores delenity, moires provident blanditiis,
+				beatea natuss consequntuur quia hic adipcitc possius oditLo.
+				officiis impedit omnis ex similiquea prasentiue, consecuator</p>
+			</div>
+			<div class="sidebar">
+				<h3>Tentang penulis</h3>
+				<img src="img/majid.jpg" alt="Abdul Majid">
+				<p>Lorem Ipsum dolor sit amet, consectetur adipsicing elit.
+				officiis impedit omnis ex similiquea prasentiue, consecuator
+				cumke vero dolores delenity, moires provident blanditiis,
+				beatea natuss consequntuur quia hic adipcitc possius odit
+				Lorem Ipsum dolor sit amet, consectetur adipsicing elit.
+				officiis impedit omnis ex similiquea prasentiue, consecuator
+				cumke vero dolores delenity, moires provident blanditiis.</p>
+			</div>
+		</div>
+		
+		<div class="footer">
+			<p>Copyright &copy Abdul Majid 31 juli 2021</p>
+		</div>
+	</div>
+</body>
+</html>
